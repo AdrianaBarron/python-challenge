@@ -33,14 +33,10 @@ for i in range(len(month_list)):
     sum_revenue += int(month_rev)
 
 
-print (sum_revenue)
-
-print (num_months)
-
-
 
 
 total_profit_per_month = []
+
 
 #print(total_profit_per_month)
 
@@ -55,26 +51,7 @@ for i in range(len(month_list)):
         diff_month_profit = curr_month_profit - prev_month_profit
         total_profit_per_month.append(diff_month_profit)
 
+print(max(total_profit_per_month))
+print(min(total_profit_per_month))
 print(sum(total_profit_per_month) / num_months)
-
-'''current_profit_loss = int(row[1])
-total_profit_loss += current_profit_loss
-
-if (num_months == 1):
-        previous_profit_loss = current_profit_loss
-
-else:
-        profit_change = current_profit_loss - previous_profit_loss
-
-        months.append(row[0])
-
-        profit_change.append(profit_change)
-
-        previous_profit_loss = current_profit_loss
-
-
-#Assign variables for profits'''
-
-
-
 
